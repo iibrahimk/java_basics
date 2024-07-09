@@ -1,0 +1,39 @@
+package oopBasic;
+
+import java.util.Scanner;
+import java.util.*;
+
+
+class Student{
+	int studentID;
+	String studentName;
+	int studentAge;
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	public void acceptDetails() {
+		System.out.println("Enter student id : ");
+		studentID = scanner.nextInt();
+		System.out.println("Enter student's name : ");
+		studentName = scanner.next();
+		System.out.println("Enter student's age : ");
+		studentAge = scanner.nextInt();
+		
+	}
+	public void showDetails() {
+		System.out.println("Student ID : "+studentID);
+		System.out.println("Student Name : "+studentName);
+		System.out.println("Student age : "+studentAge);
+	}
+}
+
+public class classAndObject {
+	
+	public static void main(String[] args) {
+		//creating an object of class student
+		Student student = new Student();
+		student.acceptDetails();
+		student.showDetails();
+	}
+
+}

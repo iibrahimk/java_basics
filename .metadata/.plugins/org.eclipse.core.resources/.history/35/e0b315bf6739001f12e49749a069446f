@@ -1,0 +1,16 @@
+package basics;
+
+public class LoopingExample {
+	
+	public static void main(String[] args) {
+		
+		int finish = 10;
+		
+		//for loop
+		for(int i = 0;i<args.length;i++) {
+			System.out.println(args[i]);
+		}
+		
+	}
+
+}

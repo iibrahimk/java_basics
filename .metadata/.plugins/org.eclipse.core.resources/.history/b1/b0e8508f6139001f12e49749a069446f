@@ -1,0 +1,16 @@
+package basics;
+
+public class StringExample {
+	
+	public static void main(String[] args) {
+		
+		//without the object and keyword
+		String name = "Ibrahim Munna";
+		System.out.println(name);
+		
+		//with the object keyword
+		String newName = new String("Don Rozario");
+		System.out.println(newName);
+	}
+
+}

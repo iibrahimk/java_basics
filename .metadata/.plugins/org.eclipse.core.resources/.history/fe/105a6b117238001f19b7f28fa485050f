@@ -1,0 +1,25 @@
+package basics;
+
+public class ArithmaticOperators {
+	
+	public static void main(String[] args) {
+		
+		int firstValue = 50;
+		int secondValue = 100;
+		
+		//normal operators
+		System.out.println(firstValue + secondValue);
+		System.out.println(firstValue - secondValue);
+		System.out.println(firstValue * secondValue);
+		System.out.println( secondValue / firstValue);
+		System.out.println(firstValue % secondValue);
+		
+		//incremental / decremental operators
+		
+		System.out.println(firstValue++);
+		System.out.println(++firstValue);
+		System.out.println(firstValue--);
+		System.out.println(--firstValue);
+	}
+
+}

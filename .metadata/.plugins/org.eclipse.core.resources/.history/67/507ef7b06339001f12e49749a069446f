@@ -1,0 +1,14 @@
+package basics;
+
+public class StringBufferExample {
+
+	public static void main(String[] args) {
+		
+		//String Buffer
+		StringBuffer buffer = new StringBuffer("Hello");
+		buffer.append("World");
+		System.out.println(buffer);
+		System.out.println("Capacity : "+ buffer.capacity());
+		
+	}
+}

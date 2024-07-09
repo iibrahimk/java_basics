@@ -1,0 +1,43 @@
+package oopBasic;
+
+import java.util.Queue;
+import java.util.Stack;
+import java.util.ArrayDeque;
+
+class ReverseString{
+	
+	public Queue<String> reverseString(ArrayDeque<String> input) {
+		
+		Stack<String> stack = new Stack<String>();
+		
+		Queue<String> heda = new ArrayDeque<String>();
+		
+		while(!input.isEmpty()) {
+			stack.push(input.pop());
+		}
+		while(!stack.isEmpty()) {
+			heda.add(stack.pop());
+		}
+		
+		
+		return heda;
+	}
+}
+public class ReverseStringQueue extends  ReverseString{
+	
+	public static void main(String[] args) {
+		
+		ReverseString reverseString = new ReverseString();
+		
+		Queue<String> straight = new ArrayDeque<String>();
+		straight.add("I");
+		straight.add("B");
+		straight.add("R");
+		straight.add("A");
+		
+		String reversed = reverseString.reverseString(straight);
+	}
+	
+	
+
+}

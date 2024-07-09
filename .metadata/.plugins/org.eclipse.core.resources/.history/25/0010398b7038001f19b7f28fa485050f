@@ -1,0 +1,17 @@
+package basics;
+
+public class TypeCasting {
+	
+	public static void main(String[] args) {
+		
+		//Type casting
+		
+		int intNumber = 100;
+		long longNumber =  intNumber;
+		double doubleNumber  = intNumber;
+		
+		system.out.println(intNumber, longNumber, doubleNumber);
+				
+	}
+
+}

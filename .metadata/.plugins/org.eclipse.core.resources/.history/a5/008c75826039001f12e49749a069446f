@@ -1,0 +1,15 @@
+package basics;
+
+import java.util.*;
+public class String {
+	public static void main(String[] args) {
+		
+		//without object keyword
+		String name = "Ibrahim Munna";
+		System.out.println(name);
+		
+		
+		
+	}
+
+}

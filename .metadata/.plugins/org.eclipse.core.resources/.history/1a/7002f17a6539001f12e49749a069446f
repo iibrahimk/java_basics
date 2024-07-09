@@ -1,0 +1,17 @@
+package basics;
+
+public class ConditionaStatement {
+	
+	public static void main(String[] args) {
+		int oneNumber = 1;
+		int twoNumber = 2;
+		
+		if(oneNumber>twoNumber) 
+			System.out.println("IF");
+		else if(oneNumber>twoNumber)
+			System.out.println("Else if");
+		else
+			System.out.println("Else");
+	}
+
+}

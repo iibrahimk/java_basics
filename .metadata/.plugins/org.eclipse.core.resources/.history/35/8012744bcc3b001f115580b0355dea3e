@@ -1,0 +1,71 @@
+package oopBasic;
+
+abstract class BankAccount{
+	abstract void deposit();
+	abstract void withdraw();
+	abstract void balance();
+}
+
+class SavingsAccount extends BankAccount{
+
+	@Override
+	void deposit() {
+		// TODO Auto-generated method stub
+		System.out.println("Deposit");
+		
+	}
+
+	@Override
+	void withdraw() {
+		// TODO Auto-generated method stub
+		System.out.println("Withdraw");
+	}
+
+	@Override
+	void balance() {
+		// TODO Auto-generated method stub
+		System.out.println("Balance");
+	}
+	
+}
+
+class CurrentAccount extends BankAccount{
+
+	@Override
+	void deposit() {
+		// TODO Auto-generated method stub
+		System.out.println("Current Account Deposit");
+		
+	}
+
+	@Override
+	void withdraw() {
+		// TODO Auto-generated method stub
+		System.out.println("Current Account Withdraw");
+	}
+
+	@Override
+	void balance() {
+		// TODO Auto-generated method stub
+		System.out.println("Current Account Balance");
+	}
+	
+}
+
+public class AbstractClass {
+	
+	public static void main(String[] args) {
+		SavingsAccount savingAccount =  new SavingsAccount();
+		
+		savingAccount.balance();
+		savingAccount.deposit();
+		savingAccount.withdraw();
+		
+		CurrentAccount currentAccount =  new CurrentAccount();
+		
+		currentAccount.balance();
+		currentAccount.deposit();
+		currentAccount.withdraw();
+	}
+
+}

@@ -1,0 +1,31 @@
+package oopBasic;
+
+import java.util.Stack;
+
+class strignRevers{
+	public String resvers(String input) {
+		
+		Stack<Character> stack = new Stack<Character>();
+		
+		for(char ch: stack) {
+			stack.push(ch);
+		}
+		
+		String reversed = "";
+		
+		while (!stack.empty()) {
+			
+			reversed += stack.pop()
+		}
+		
+		return reversed;
+	}
+}
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

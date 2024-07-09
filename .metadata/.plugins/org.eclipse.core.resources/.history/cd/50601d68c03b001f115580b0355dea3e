@@ -1,0 +1,65 @@
+package oopBasic;
+
+class NewStudent2{
+	
+	private int studentID;
+	private String studentName;
+	private int studentAge;
+	
+	//default constructions
+	public NewStudent2() {
+		this.studentID = 101;
+		this.studentName = "Ibrahim";
+		this.studentAge = 29;
+	}
+	
+	//Parameterized constructor
+	
+	public NewStudent2 (int sID, String sName, int sAge) {
+		this.studentAge = sAge;
+		this.studentID = sID;
+		this.studentName = sName;
+	}
+	
+	 void showDisplay(){
+		System.out.println("StudentID : "+studentID);
+		System.out.println("Student's name : "+studentName);
+		System.out.println("Student's age : "+studentAge);
+		
+	};
+}
+
+class Marks extends NewStudent2{
+	
+	private float objectiveMarks = 10.5F;
+	private float subjectiveMarks = 80.5F;
+	
+	NewStudent2 newStudent2 = new NewStudent2(103, "Ibrahim", 30);
+
+	 void showDisplay1(){
+		System.out.println("Objective marks : "+objectiveMarks);
+		System.out.println("Subjective marks : "+subjectiveMarks);
+		System.out.println("New Student details : "+newStudent2);
+		
+	}
+	
+}
+
+
+public class inheritanceTest {
+	
+	public static void main(String[] args) {
+		
+		Marks marks = new Marks();
+		
+		marks.showDisplay();
+		marks.showDisplay1();
+		
+		
+		
+		
+		
+		
+	}
+
+}

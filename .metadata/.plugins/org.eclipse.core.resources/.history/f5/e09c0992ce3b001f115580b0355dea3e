@@ -1,0 +1,42 @@
+package oopBasic;
+
+
+interface TestBank{
+	
+	void deposit();
+	void withdraw();
+	void balace();
+	
+}
+
+class Savings implements TestBank{
+
+	@Override
+	public void deposit() {
+		// TODO Auto-generated method stub
+		System.out.println("DEPOSIT");
+		
+	}
+
+	@Override
+	public void withdraw() {
+		// TODO Auto-generated method stub
+		System.out.println("Withdraw");
+		
+	}
+
+	@Override
+	public void balace() {
+		// TODO Auto-generated method stub
+		System.out.println("BALANCE");
+		
+	}
+	
+}
+public class Interface {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package oopBasic;
+
+import java.util.Queue;
+import java.util.Stack;
+
+class reverseString{
+	
+	public String reverseString(Queue<String> input) {
+		
+		Stack<String> stack = new Stack<String>();
+		
+		while(!input.isEmpty()) {
+			stack.push(input.remove());
+		}
+		while(!stack.isEmpty()) {
+			input.add(stack.pop())
+		}
+		
+		
+		return "";
+	}
+}
+public class ReverseStringQueue {
+
+}
