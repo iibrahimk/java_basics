@@ -1,0 +1,21 @@
+package oopBasic;
+
+import java.util.Map;
+import java.util.LinkedHashMap;
+
+public class LinkedHashMapExample {
+	
+	public static void main(String[] args) {
+		
+		LinkedHashMap<String, Integer> evenNumbers = new LinkedHashMap();
+		evenNumbers.put("Two", 2);
+		evenNumbers.put("Four", 4);
+		evenNumbers.put("Six", 6);
+		evenNumbers.put("Eight", 8);
+		evenNumbers.put("Ten", 10);
+		
+		System.out.println(evenNumbers);
+		
+	}
+
+}
