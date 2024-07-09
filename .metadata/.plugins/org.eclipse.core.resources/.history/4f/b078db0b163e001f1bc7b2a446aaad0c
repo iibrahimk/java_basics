@@ -20,20 +20,6 @@ public class HashmapExample {
 		
 		String value = map.get(02);
 		System.out.println(value);
-		
-		//getting the keys
-		System.out.println("Key Sets : "+map.keySet());
-		System.out.println("Values : "+map.values());
-		System.out.println("Entry Sets : "+map.entrySet());
-		System.out.println("Remove by key : "+map.remove(01));
-		System.out.println("New entry Sets : "+map.entrySet());
-		
-		//clearing the map
-		map.clear();
-		
-		System.out.println("After remove : "+map);
-		
-		
 	}
 
 }

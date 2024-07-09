@@ -1,0 +1,22 @@
+package oopBasic;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashmapExample {
+	
+	public static void main(String[] args) {
+		
+		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(01,"IBRAHIM");
+		map.put(02,"Sumaiya");
+		map.put(03,"Suhayra");
+		
+		System.out.println(map);
+		
+		for(Map.Entry<Integer, String> m : map.entrySet()) {
+			System.out.println(m.getKey() +" : "+ m.getValue());
+		}
+	}
+
+}
