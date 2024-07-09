@@ -1,0 +1,20 @@
+package oopBasic;
+
+import java.util.WeakHashMap;
+
+public class WeakHashMpaExample {
+	
+	public static void main(String[] args) {
+		
+		WeakHashMap<String, Integer> numbers = new WeakHashMap<String, Integer>();
+		
+		numbers.put("One", 1);
+		numbers.put("Two", 2);
+		numbers.put("Three", 3);
+		
+		System.out.println(numbers);
+		
+		
+	}
+
+}
