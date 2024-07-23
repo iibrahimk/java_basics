@@ -1,0 +1,17 @@
+package oopBasic;
+
+import java.util.ArrayList;
+
+public class LinkedHashExample {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> evenNumbers = new ArrayList<Integer>();
+		
+		evenNumbers.add(2);
+		evenNumbers.add(4);
+		evenNumbers.add(6);
+		evenNumbers.add(8);
+	}
+
+}
