@@ -1,0 +1,21 @@
+package oopBasic;
+
+import java.util.EnumSet;
+
+public class EnumSetExample {
+
+	enum Size{
+		SMALL, MEDIUM, LARGE, EXTRALARGE
+	}
+	
+	public static void main(String[] args) {
+	
+		EnumSet<Size> sizes = EnumSet.allOf(Size.class);
+		System.out.println(sizes);
+		
+		EnumSet<Size> sizes = EnumSet.noneOf(Size.class);
+		System.out.println(sizes);
+		
+	}
+
+}
