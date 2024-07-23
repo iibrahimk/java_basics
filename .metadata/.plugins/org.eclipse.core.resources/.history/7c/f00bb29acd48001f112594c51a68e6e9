@@ -1,0 +1,30 @@
+package oopBasic;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetExample {
+	
+	public static void main(String[] args) {
+		
+		HashSet<Integer> hashSet = new HashSet<Integer>();
+		
+		hashSet.add(100);
+		hashSet.add(200);
+		hashSet.add(300);
+		hashSet.add(400);
+		
+		Iterator<Integer> iterate = hashSet.iterator();
+		
+		while(iterate.hasNext())
+			System.out.println(iterate.next());
+		
+		hashSet.remove(300);
+		
+		while(iterate.hasNext())
+			System.out.println(iterate.next());
+		
+		
+	}
+
+}
